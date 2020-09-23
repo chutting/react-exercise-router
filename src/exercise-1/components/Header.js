@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 class Header extends Component {
   render() {
     return <section className="header">
-      <Link to='/' className="link">Home</Link>
-      <Link to='/my-profile' className="link">My Profile</Link>
-      <Link to='/about-us' className="link">About Us</Link>
+      <NavLink exact to='/' className="link" activeClassName="active-link">Home</NavLink>
+      <NavLink exact to='/my-profile' className="link" activeClassName="active-link">My Profile</NavLink>
+      <NavLink exact to='/about-us' className="link" activeClassName="active-link">About Us</NavLink>
     </section>
   }
 }

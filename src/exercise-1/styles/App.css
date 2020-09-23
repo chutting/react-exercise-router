@@ -26,3 +26,7 @@
   color: #525958;
   font-weight: bold;
 }
+
+.active-link {
+  text-decoration: underline;
+}
