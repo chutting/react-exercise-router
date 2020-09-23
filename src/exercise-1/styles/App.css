@@ -31,6 +31,15 @@
   text-decoration: underline;
 }
 
-.company-website {
+.company-website, .product-item {
   color: red;
+}
+
+.product-router-config {
+  margin: 5px 0;
+}
+
+.products-list {
+  display: flex;
+  flex-direction: column;
 }
