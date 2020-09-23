@@ -30,3 +30,7 @@
 .active-link {
   text-decoration: underline;
 }
+
+.company-website {
+  color: red;
+}
