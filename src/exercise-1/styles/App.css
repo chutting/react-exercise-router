@@ -1,0 +1,28 @@
+.app {
+  margin: 100px;
+  border: 1px solid #8A8B8C;
+}
+
+
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  background-color: #CBCDCD;
+  border: 1px solid #9A9A9B;
+}
+
+.link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #505555;
+  font-weight: bold;
+}
+
+.main {
+  height: 400px;
+  padding: 20px;
+  color: #525958;
+  font-weight: bold;
+}
