@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../styles/App.css';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import AboutUs from './AboutUs';
@@ -15,11 +15,14 @@ class App extends Component {
         <BrowserRouter>
           <Header />
           <section className="main">
-            <Route exact path="/" component={Home}></Route>
-            <Route exact path="/products" component={Products}></Route>
-            <Route exact path="/about-us" component={AboutUs}></Route>
-            <Route exact path="/my-profile" component={Profile}></Route>
-            <Route exact path="/products/:id" component={Product}></Route>
+            <Switch>
+              <Route exact path="/" component={Home}></Route>
+              <Route exact path="/products" component={Products}></Route>
+              <Route exact path="/about-us" component={AboutUs}></Route>
+              <Route exact path="/my-profile" component={Profile}></Route>
+              <Route exact path="/products/:id" component={Product}></Route>
+              <Route component={Home}></Route>
+            </Switch>
           </section>
         </BrowserRouter>
       </div>
