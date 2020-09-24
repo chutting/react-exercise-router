@@ -4,6 +4,7 @@ import {Route, Switch} from "react-router";
 import Home from "./Home";
 import About from "./About";
 import User from "./User";
+import NotMatch from "./NotMatch"
 
 class App extends Component {
   render() {
@@ -13,7 +14,8 @@ class App extends Component {
            <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/about' component={About} />
-            <Route exact path='/:user' component={User} />
+            <Route exact path='/(\d+)' component={User} />
+            <Route component={NotMatch} />
            </Switch>
         </Router>
       </div>
